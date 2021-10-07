@@ -8,13 +8,12 @@ body {
     display: flex;
     margin: 100px auto;
     border-radius: 20px;
-
-    
 }
 
 .card-profile {
     padding: 30px;
     background-color: #fafafa;
+    border-radius: 20px 0 0 20px;
 }
 
 .profile-img {
@@ -44,9 +43,8 @@ body {
     text-align: center;
     line-height: 25px;
     font-weight: bolder;
+    border-radius: 0 20px 20px 0;
 }
-
-
 
 .contact {
     margin-top: 90px;
