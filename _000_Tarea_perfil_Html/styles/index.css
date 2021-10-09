@@ -31,11 +31,11 @@ body {
 .github {
     width: 30px;
     height: 30px;
-    opacity: 75%;
+    opacity: 0.75;
 }
 
 .github:hover {
-    opacity: 100%;
+    opacity: 1;
 }
 
 .card-contact {
@@ -70,6 +70,6 @@ body {
     color: #fafafa;
     margin-top: 30px;
     border-radius: 8px;
-    box-shadow: 0px 15px 15px -5px #3c3744;
+    box-shadow: 0 15px 15px -5px #3c3744;
 }
 

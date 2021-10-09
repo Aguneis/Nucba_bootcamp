@@ -38,7 +38,7 @@ body {
 .main-date {
     display: flex;
     justify-content: center;
-    margin:30px 0 30px 0;
+    margin:30px 0;
 }
 
 .btn-date {
