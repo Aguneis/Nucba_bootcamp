@@ -39,8 +39,6 @@ body {
     display: flex;
     justify-content: center;
     margin:30px 0 30px 0;
-    
-
 }
 
 .btn-date {
@@ -49,66 +47,70 @@ body {
     font-size: 50px;
     padding: 0 30px;
     opacity: 50%;
-    
 }
 
 .btn-date:hover {
     opacity: 100%;
 }
-/*idem volver a plantear */
+
 .date-display {
-    line-height: 20px;
+    line-height: 16px;
     text-align: center;
+    font-weight: bolder;
 }
 
 .date {
     font-size: 40px;
-    font-weight: bolder;
 }
 
-.day {
-    font-size: 15px;
-}
-/* hasta aca*/
 .card {
     display: flex;
     justify-content: space-between;
     background-color: #203774;
     border-radius: 20px;
-    width: 65%;
-    height: 25%;
+    width: 60%;
+    height: 27%;
     margin: 25px auto;
     color: #ffffff;
-    
 }
-.info {
 
+.info {
+    margin-left: 40px;
 }
 
 .card-title {
-
-}
-
-.turn-time {
-
+    font-size: 26px;
+    font-weight: bolder;
 }
 
 .profile {
-
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
 }
 
 .img {
-
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: solid 3px #4868BD;
 }
 
 .dr-name {
-
+    margin-left: 10px;
 }
 
 .submit {
-
+    width: 50%;
+    text-align: center;
 }
 
 .btn-submit {
-
+    width: 60%;
+    height: 50px;
+    margin-top: 40px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    border: none;
+    font-weight: bolder;
 }
