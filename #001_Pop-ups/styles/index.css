@@ -26,7 +26,7 @@ body {
     display: flex;
     border: none;
     background: none;
-    opacity: 30%;
+    opacity: 0.3;
     font-size: 20px;
     padding: 20px;
     margin: 15px 15px 0 0;
@@ -42,12 +42,12 @@ body {
 
 .button_1 {
     border: none;
-    background-color:#ed6755 ;
+    background-color :#ed6755 ;
     border-radius: 10px;
     width: 45%;
     height: 45px;
     color: #ffffff;
-    box-shadow: 0px 7px 15px -5px #ed6755;
+    box-shadow: 0 7px 15px -5px #ed6755;
 }
 
 .button_2 {
@@ -57,5 +57,5 @@ body {
     width: 45%;
     height: 45px;
     color: #ffffff;
-    box-shadow: 0px 7px 15px -5px #2c3e50;
+    box-shadow: 0 7px 15px -5px #2c3e50;
 }
