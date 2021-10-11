@@ -2,12 +2,13 @@ body {
     background-color: #FFEDD2;
     margin: 0;
     color: #000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .main-layout {
     display: flex;
     justify-content: center;
-    margin-top: 200px;
+    margin-top: 5em;
 }
 
 .card {
@@ -15,38 +16,43 @@ body {
     height: 458px;
     background-color: #FFFFFF;
     border-radius: 40px;
+    box-shadow: 0 7px 15px -5px #494747;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .profile {
-    text-align: center;
-    padding: 70px 120px 20px 120px;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .img-profile {
-    width: 110px;
-    height: 110px;
+    width: 125px;
+    height: 125px;
     border-radius: 15px;
-
 }
 
 .profile-title {
-    margin-top: 35px;
-
+    margin-top: 1.6em;
 }
 
 .profile-description {
-
+    margin: 0 7em 1.5em;
+    text-align: center;
+    font-size: 0.9em;
+    line-height: 1.5em;
+    font-weight: bolder;
 }
 
 .btn-layout {
     display: flex;
     justify-content: center;
-
 }
 
 .btn-follow {
-    width: 160px;
+    width: 180px;
     height: 45px;
     border-radius: 20px;
     display: flex;
@@ -54,18 +60,17 @@ body {
     justify-content: center;
     margin-right: 12px;
     border:none;
-    background: #FA3967  + #FA9639;
-    mix-blend-mode: luminosity;
+    background: linear-gradient(to right, #fa3967 , #fa9639);
 }
 
 .img-follow {
-    margin-right: 5px;
+    margin-right: 0.2em;
     width: 20px;
     height: 20px;
 }
 
 .btn-msj {
-    width: 160px;
+    width: 180px;
     height: 45px;
     border-radius: 20px;
     display: flex;
@@ -73,12 +78,10 @@ body {
     justify-content: center;
     border:none;
     background-color: #FFEDD2;
-   
-
 }
 
 .img-msj {
-    margin-right: 5px;
+    margin-right: 0.2em;
     width: 20px;
     height: 20px;
 }

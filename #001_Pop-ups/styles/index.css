@@ -11,7 +11,7 @@ body {
     background-color: #ffffff;
     width: 432px;
     height: 399px;
-    margin: 20px auto;
+    margin: 1.5em auto;
     border-radius: 15px;
 }
 
@@ -26,14 +26,14 @@ body {
     background: none;
     opacity: 0.3;
     font-size: 1.5em;
-    margin: 35px 35px 0 0;
+    margin: 1.2em 1.2em 0 0; 
 }
 
 .card-body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 4%;
+    margin-top: 1.8em; 
 }
 
 .text_1 {
@@ -64,5 +64,5 @@ body {
     height: 45px;
     color: #ffffff;
     box-shadow: 0 7px 15px -5px #2c3e50;
-    margin-top: 8%;
+    margin-top: 2em;
 }
