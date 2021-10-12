@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    background: linear-gradient(to right, rgba(244,190,232,1) 1%,rgba(178,214,255,1) 43%,rgba(244,229,188,1) 99%,rgba(255,254,253,1) 100%,rgba(255,255,255,1) 100%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main-layout {
+    display: flex;
+    justify-content: center;
+    margin: 8em auto;
+}
+
+.card {
+    width: 70%;
+    height: 25em;
+    border: 0.8em solid #fafafa;
+    background: linear-gradient(to right, rgb(250, 244, 250) 1%,rgb(232, 244, 247) 27%,rgb(235, 248, 250) 71%,rgb(248, 246, 228) 100%);
+    border-radius: 15px;
+    display: flex;
+    padding: 0 1em 0 1.5em;
+    box-shadow: 0 7px 15px -5px #494747;
+}
+
+.card-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1.5em 0.9em;
+}
+
+.card-title {
+ font-size: 1.3em;
+}
+
+.card-price {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.price {
+    font-size: 3em;
+    font-weight: bolder;
+}
+
+.price-sign {
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+.users {
+    font-size: 0.8em;
+}
+
+.card-description {
+    text-align: left;
+    font-size: 0.9em;
+    width: 80%;
+}
+
+
+.btn-submit-1 {
+    background-color:rgb(235, 75, 149);
+    width: 60%;
+    height: 3.5em;
+    border: none;
+    border-radius: 8px;
+    font-weight: bolder;
+}
+
+.btn-submit-2 {
+    background-color: rgb(56, 225, 255);
+    width: 40%;
+    height: 3.5em;
+    border: none;
+    border-radius: 8px;
+    font-weight: bolder;
+}
+
+.btn-submit-3 {
+    background-color: #111111;
+    width: 60%;
+    height: 3.5em;
+    border: none;
+    border-radius: 8px;
+    color: #fafafa;
+}
