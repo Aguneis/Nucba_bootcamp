@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: linear-gradient(90deg, #FFFDE1, #FFEDDA);
+}
+
+.main-layout {
+    display: flex;
+    margin: auto;
+    padding-top: 7rem;
+}
+
+.grid-container {
+    width: 60vw;
+    min-height: 50vh;
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: auto auto 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.text-1 {
+    font-size: calc(1.3rem + 1.8vw);
+    margin: 0;
+    writing-mode: vertical-lr;
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+    font-family: 'Josefin Slab', serif;
+}
+
+.text-2 {
+    font-size: calc(1rem + 1.8vw);
+    margin: 0;
+    grid-column: 4 / 6;
+    grid-row: 2 / 3;
+    align-self: flex-end;
+    font-family: 'Bree Serif', serif;
+    font-family: 'Josefin Slab', serif;
+}
+
+.text-3 {
+    font-size: calc(1rem + 1.8vw);
+    margin: 0;
+    grid-column: 1 / 3;
+    grid-row: 5 / 6;
+    align-self: center;
+    font-family: 'Josefin Slab', serif;
+}
+
+.text-4 {
+    font-size: calc(0.5rem + 1.8vw);
+    margin: 0;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    display: flex;
+    justify-content: end;
+    align-self: flex-end;
+    font-family: 'Bree Serif', serif;
+    font-family: 'Josefin Slab', serif;
+}
+
+.text-5 {
+    font-size: calc(0.1rem + 1.8vw);
+    margin: 0;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    align-self: flex-end;
+    font-family: 'Bree Serif', serif;
+    font-family: 'Josefin Slab', serif;
+}
+
+.item1 {
+    background-color: #FB3569;
+    grid-column: 2 / 4;
+    grid-row: 4 / 5;
+    margin-left: 1vh;
+}
+
+.item2 {
+    background-color: #FF9D76;
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+}
+
+.item3 {
+    background-color:#51EAEA;
+    grid-column: 5 / 6;
+    grid-row: 5 / 6;
+    min-height: 2rem;
+}
+
+.item4 {
+    background-color: #51EAEA;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    margin-left: 1rem;
+}
+
+@media (min-width: 760px) {
+    
+    .main-layout {
+        padding: 15rem;
+    }
+}
