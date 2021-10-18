@@ -6,15 +6,27 @@
 
 html {
     font-size: 1rem;
-    scroll-behavior: smooth;
 }
 
 body {
-    background-color:hsl(0, 0%, 100%);
+    background-color: hsl(210, 46%, 95%);
     font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
+.main-layout {
+    display: grid;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, auto);
+      grid-template-areas:
+      'header		header'
+      'main         main'
+      'footer       footer';
+
+}
 .header {
+    grid-area: header;
     background-color: hsl(263, 55%, 52%);
     position: sticky;
     top: 0;
@@ -47,24 +59,126 @@ nav {
     display: none;
 }
 
-
-#menu:checked ~ .sections-movile {
-    position: absolute;
+#menu:checked ~ .sections-mobile {
+    position: fixed;
+    top: 6.2rem;
     width: 100%;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     list-style: none;
-    background-color: hsl(217, 19%, 35%);
-    margin-top: 12rem;
-    
+    background-color: hsl(217, 19%, 35%, 90%);
 }
 
-.sections-movile {
+.sections-mobile {
     display: none;
 }
 
+.item-mobile {
+    line-height: 5rem;
+    font-size: 1.5rem;
+}
+
+.item-mobile:hover {
+    margin: 1rem;
+    width: 90%;
+    background-color:hsl(219, 29%, 14%, 40% );
+    text-align: center;
+    border-radius: 1.5rem;
+}
+
 .sections {
-    color: black;
+    color: hsl(0, 0%, 100%);
     text-decoration: none;
 }
+
+.main {
+    grid-area: main;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    margin-top: 1rem;
+}
+
+.card {
+    margin: 0 1.5rem;
+    border-radius: 15px;
+    padding: 1.5rem;
+
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+}
+
+.card-img {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+}
+
+.profile-conteiner {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-name {
+
+}
+
+.profile-info {
+
+}
+
+.card-title {
+    
+}
+
+.card-info {
+
+
+}
+
+/* Cada card*/
+
+.n1 {
+    background-color: hsl(263, 55%, 52%);
+    
+}
+
+.n2 {
+    background-color: hsl(217, 19%, 35%);
+}
+
+.n3 {
+    background-color:hsl(0, 0%, 100%) ;
+}
+
+.n4 {
+    background-color: hsl(219, 29%, 14%);
+}
+
+.n5{
+    background-color: hsl(0, 0%, 100%);
+}
+
+.footer {
+    grid-area: footer;
+    background-color: hsl(217, 19%, 35%);
+}
+
+.networks {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .link-img {
+    width: 2rem;
+    height: 2rem;
+    margin: 0.5rem;
+  }
+  
