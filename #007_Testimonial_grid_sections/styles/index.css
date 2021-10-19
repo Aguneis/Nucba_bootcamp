@@ -162,8 +162,7 @@ nav {
     color: hsl(0, 0%, 100%);
     background-image: url(../assets/bg-pattern-quotation.svg);
     background-repeat: no-repeat;
-    background-position: right 6rem top;
-    
+    background-position: right 2rem top;
 }
 
 .n2 {
@@ -219,6 +218,7 @@ nav {
     .n1 {
         grid-column: 1 / 3;
         grid-row: 1 / 2;
+        background-position: right 6rem top;
     }
     
     .n2 {
