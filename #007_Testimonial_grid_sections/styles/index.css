@@ -128,9 +128,14 @@ nav {
     margin-left: 1rem;
 }
 
-.profile-info {
+.profile-info-black {
     font-size: 0.8rem;
-    opacity: 50%;
+    color:rgba(48, 45, 45, 0.7);
+}
+
+.profile-info-white {
+    font-size: 0.8rem;
+    color: hsl(0, 0%, 100%, 0.5);
 }
 
 .card-title {
@@ -138,9 +143,15 @@ nav {
     line-height: 1.7rem;
 }
 
-.card-info {
+.card-info-white {
     margin: 1rem 0;
-    opacity: 70%;
+    color: hsl(0, 0%, 100%, 0.5);
+    line-height: 1.4rem;
+}
+
+.card-info-black {
+    margin: 1rem 0;
+    color: rgba(48, 45, 45, 0.7);
     line-height: 1.4rem;
 }
 
@@ -149,6 +160,10 @@ nav {
 .n1 {
     background-color: hsl(263, 55%, 52%);
     color: hsl(0, 0%, 100%);
+    background-image: url(../assets/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: right 6rem top;
+    
 }
 
 .n2 {
