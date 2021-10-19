@@ -72,6 +72,7 @@ body {
 	text-transform: uppercase;
   padding: 0.5rem;
   color: #d8d6d6;
+  font-size: 0.8rem;
 }
 
 .sections:hover {
@@ -309,6 +310,10 @@ label:hover ~ label {
 
   .banner-img {
       height: 15rem;
+  }
+
+  .sections {
+      font-size: 1rem;
   }
 }
 
