@@ -295,6 +295,12 @@ label:hover ~ label {
   margin: 0.5rem;
 }
 
+.link-img:hover {
+  width: 2.5rem;
+  height: 2.5rem;
+  transition: all 0.3s ease;
+}
+
 @media (min-width: 36em){
     
   body {
