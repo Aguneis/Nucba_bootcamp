@@ -20,7 +20,6 @@ html {
       'footer       footer';
 }
 
-
 .margin-conteiner {
     margin: 0 1.5rem;
 }
@@ -42,10 +41,6 @@ html {
 .logo {
     width: 9rem;
     height: auto;
-}
-
-.logo-menu {
-
 }
 
 #menu {
@@ -72,14 +67,6 @@ html {
 
 .menu-desktop {
     display: none;
-}
-
-.item-sections {
-
-}
-
-.sections-desktop {
-    
 }
 
 .menu-mobile {
@@ -112,10 +99,6 @@ html {
     grid-area: banner;
 }
 
-.banner-mobile {
-    
-}
-
 .img-banner-mobile {
     width: 100%;
     margin-top: 6.2rem;
@@ -123,10 +106,6 @@ html {
 
 .banner-desktop {
     display: none;
-}
-
-.img-banner-desktop {
-
 }
 
 .banner-card {
@@ -141,10 +120,6 @@ html {
     text-transform: uppercase;
 }
 
-.main {
-    grid-area: main;
-}
-
 .banner-card-text {
     margin-top: 1.3rem;
     padding: 0 0.5rem;
@@ -154,8 +129,8 @@ html {
     text-align: center;
 }
 
-.section-header {
-
+.main {
+    grid-area: main;
 }
 
 .section-header-title {
@@ -190,6 +165,10 @@ html {
     text-transform: uppercase;
     color: hsl(0, 0%, 100%);
     padding: 1.2rem;
+}
+
+.card:hover {
+    opacity: 0.3;
 }
 
 .n1 {
@@ -257,6 +236,11 @@ html {
     border: 1px solid;
 }
 
+.mobile-btn:hover {
+    background-color: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
+}
+
 .footer {
     grid-area: footer;
     background-color: hsl(0, 0%, 0%);
@@ -267,16 +251,12 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.footer-info {
-   
+    margin-top: 3.8rem;
 }
 
 .footer-logo {
     width: 9rem;
     height: auto;
-    margin-top: 3.8rem;
 }
 
 .menu-footer {
@@ -289,15 +269,14 @@ html {
 .sections-footer {
     text-decoration: none;
     color: hsl(0, 0%, 100%);
-    
+}
+
+.sections-footer:hover {
+    border-bottom: 1px solid hsl(0, 0%, 100%);
 }
 
 .item-footer-menu {
     text-align: center;
-}
-
-.footer-contact {
-
 }
 
 .footer-networks {
@@ -308,156 +287,214 @@ html {
 
 .link-img {
     margin: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.link-img:hover {
+    border-bottom: 1px solid hsl(0, 0%, 100%);
 }
 
 .footer-rights {
-    margin-top: 2.5rem;
+    margin-top: 2rem;
     color: hsl(0, 0%, 41%);
     font-family:'Alata', sans-serif;
 }
 
 @media (min-width: 768px) {
-  
-    .margin-conteiner {
-        margin: 0 1.5rem;
-    }
 
-    .header {
-        grid-area: header;
-        background-image: url(../assets/mobile/image-hero.jpg);
-        background-size: cover;
-        color: hsl(0, 0%, 100%);
+    .navbar {
+        margin: 3.7rem  0rem;
     }
 
     .logo-menu {
-
+        display: none;
     }
 
     .menu-desktop {
-        display: none;
+        display: flex;
+        list-style: none;
+        font-family:'Alata', sans-serif;
+        font-size: 0.8rem;
     }
     
     .sections-desktop {
         color: hsl(0, 0%, 100%);
         text-decoration: none;
-        margin-left: 1.5rem;
+        margin-left: 1.7rem;
+        margin-right: 0.5rem;
+    }
+
+    .sections-desktop:hover {
+        border-bottom: 1px solid hsl(0, 0%, 100%);
     }
     
-    .header-title {
-        border: 2px solid hsl(0, 0%, 100%);
-        margin: 10.2rem 0 14.5rem 0;
-        padding: 1.7rem 1.6rem 1.2rem  1.6rem;
-        font-family: 'Josefin Sans', sans-serif;
-        font-weight: lighter;
-        font-size: 2.5rem;
-        text-transform: uppercase;
-        line-height: 2.4rem;
-        letter-spacing: 1px;
-        bottom: 0;
-    }
-
-    .banner-layout {
-        grid-area: banner;
-    }
-
-    .banner-mobile {
-    
-    }
-
-    .banner-desktop {
-        display: none;
-    }
-    
-    .img-banner-desktop {
-    
-    }
-
-    .banner-card {
-        margin-top: 2.8rem;
-    }
-
     .section-header {
-
+        display: flex;
+        justify-content: space-between;
+        margin-top: 4rem;
     }
 
     .section-btn {
+        display: inline;
+        padding: 1rem 2.6rem 0.7rem 2.6rem;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: bolder;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        background: none;
+        border: 1px solid;
+        height: 2.5rem;
+        align-self: flex-end;
+    }
+
+    .section-btn:hover {
+        background-color: hsl(0, 0%, 0%);
+        color: hsl(0, 0%, 100%);
+    }
+
+    .section-layout {
+        grid-auto-rows: 20rem;
+    }
+    
+    .mobile-btn-conteiner {
         display: none;
+    }
+
+    .footer {
+        margin-top: 10rem;
+        padding-bottom: 1.5rem;
+    }
+    
+    .footer-conteiner {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 2.5rem;
+    }
+    
+    .menu-footer {
+        display: flex;
+    }
+    
+    .item-footer-menu {
+        margin-right: 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .footer-networks {
+        margin-top: 0;
+        margin-bottom: 1rem;
+        justify-content: end;
+    }
+}
+
+@media (min-width: 1024px) {
+  
+    .margin-conteiner {
+        margin: 0 8rem;
+    }
+
+    .header {
+        background-image: url(../assets/desktop/image-hero.jpg);
+        background-position: bottom;
+    }
+
+    .header-title {
+        width: 60%;
+        padding: 1.8rem 1.6rem 1.6rem  1.6rem;
+        margin-top: 6.9rem;
+        margin-bottom: 9rem;
+        font-size: 3.8rem;
+        line-height: 3.8rem;
+    }
+
+    .banner-layout {
+        margin-top: 7rem;
+    }
+
+    .banner-conteiner {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .banner-mobile {
+        display: none;
+    }
+
+    .banner-desktop {
+        display: inline;
+        grid-column: 1 / 6;
+        grid-row: 1 /4;
+    }
+    
+    .img-banner-desktop {
+        width: 100%;
+        height: 100%;
+    }
+
+    .banner-card {
+        margin: 0;
+        padding-top: 4rem;
+        padding-left: 5rem;
+        background-color: hsl(0, 0%, 100%);
+        grid-column: 5 / 9;
+        grid-row: 2 / 4;
+    }
+
+    .banner-card-title {
+        text-align: left;
+        font-size: 3rem;
+    }
+
+    .banner-card-text {
+        font-size: 0.9rem;
+        text-align: left;
+        padding: 0;
+        line-height: 1.5rem;
+        align-items: end;
+    }
+    
+    .section-header-title {
+        font-size: 2.8rem;
     }
     
     .section-layout {
-        margin-top: 3.1rem;
-        display: grid;
-        gap: 1.5rem;
-        grid-auto-rows: 7.6rem;
-        grid-template-columns: repeat(auto-fill, minmax(min(100%, 12rem), 1fr));
+       grid-auto-rows: 30rem;
+    }
+
+    .card {
+        font-size: 2rem;
+        padding: 1.7rem;
     }
 
     .n1 {
-        background-image: url(../assets/mobile/image-deep-earth.jpg);
-        background-position: center;
-        background-size: cover;
+        background-image: url(../assets/desktop/image-deep-earth.jpg);
     }
     
     .n2 {
-        background-image: url(../assets/mobile/image-night-arcade.jpg);
-        background-position: center;
-        background-size: cover;
+        background-image: url(../assets/desktop/image-night-arcade.jpg);
     }
     
     .n3 {
-        background-image: url(../assets/mobile/image-soccer-team.jpg);
-        background-position: center;
-        background-size: cover;
+        background-image: url(../assets/desktop/image-soccer-team.jpg);
     }
-    
     .n4 {
-        background-image: url(../assets/mobile/image-grid.jpg);
-        background-position: center;
-        background-size: cover;
+        background-image: url(../assets/desktop/image-grid.jpg);
     }
     
     .n5 {
-        background-image: url(../assets/mobile/image-from-above.jpg);
-        background-position: center;
-        background-size: cover;
+        background-image: url(../assets/desktop/image-from-above.jpg);
     }
     
     .n6 {
-        background-image: url(../assets/mobile/image-pocket-borealis.jpg);
-        background-position: center;
-        background-size: cover;
+        background-image: url(../assets/desktop/image-pocket-borealis.jpg);
     }
     
     .n7 {
-        background-image: url(../assets/mobile/image-curiosity.jpg);
-        background-position: center;
-        background-size: cover;
+        background-image: url(../assets/desktop/image-curiosity.jpg);
     }
     
     .n8 {
-        background-image: url(../assets/mobile/image-fisheye.jpg);
-        background-position: center;
-        background-size: cover;
-    }
-
-    .mobile-btn-conteiner {
-        display: flex;
-        justify-content: center;
-        margin-top: 2.2rem;
-        margin-bottom: 6rem;
-    }
-
-    .footer-conteiner {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .footer-info {
-   
-    }
-
-    .footer-contact {
-
+        background-image: url(../assets/desktop/image-fisheye.jpg);
     }
 }
