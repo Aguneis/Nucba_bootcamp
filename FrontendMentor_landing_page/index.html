@@ -13,17 +13,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <div class="main-layout">
         <header class="header">
+            <!-- Aca seria main-container o main-layout_container, porque esta declardo la propiedad en clase -->
             <div class="margin-conteiner"> 
                 <nav class="navbar">   
                     <a href="index.html"><img class="logo" src="./assets/logo.svg" alt="logo Marca"></a>
                     <label for="menu"><img class="logo-menu" src="./assets/icon-hamburger.svg"></label>
                     <input id="menu" type="checkbox">
                     <ul class="menu-desktop">
-                        <li class="item-sections"><a class="sections-desktop" href="#">About</a></li>
+                        <li class="item-sections"><a class="sections-desktop" href="#" target="_self">About</a></li>
                         <li class="item-sections"><a class="sections-desktop" href="#">Career</a></li>
                         <li class="item-sections"><a class="sections-desktop" href="#">Events</a></li>
                         <li class="item-sections"><a class="sections-desktop" href="#">Products</a></li>
@@ -41,6 +41,7 @@
             </div>
         </header>
         <section class="banner-layout">
+            <!-- Aca seria main-container o main-layout_container, porque esta declardo la propiedad en clase -->
             <div class="margin-conteiner">    
                 <div class="banner-conteiner">  
                     <div class="banner-mobile">
@@ -63,6 +64,7 @@
                     <button class="section-btn">See all</button>
                 </div>
                 <div class="section-layout">
+                    <!--en lugar de n1 > card-earth -->
                     <div class="card n1"> 
                         <span>Deep</span>
                         <span>earth</span>
@@ -107,6 +109,7 @@
                     <div>
                         <img src="./assets/logo.svg" alt="Logo" class="footer-logo">
                         <ul class="menu-footer">
+                            <!-- sections-footer > menu-footer__link     menu-footer__link-disabled -->
                             <li class="item-footer-menu"><a class="sections-footer" href="#">About</a></li>
                             <li class="item-footer-menu"><a class="sections-footer" href="#">Career</a></li>
                             <li class="item-footer-menu"><a class="sections-footer" href="#">Events</a></li>
@@ -116,7 +119,7 @@
                     </div>
                     <div>
                         <div class="footer-networks">
-                            <a href="https://www.facebook.com"><img class="link-img" src="./assets/icon-facebook.svg" alt="Logo Facebook"></a>
+                            <a href="https://www.facebook.com" target="_blank"><img class="link-img" src="./assets/icon-facebook.svg" alt="Logo Facebook"></a>
                             <a href="https://www.twitter.com"><img class="link-img" src="./assets/icon-twitter.svg" alt="Logo Twitter"></a>
                             <a href="https://www.pinterest.com"><img class="link-img" src="./assets/icon-pinterest.svg" alt="Logo Pinterest"></a>
                             <a href="https://www.instagram.com"><img class="link-img" src="./assets/icon-instagram.svg" alt="Logo Instagram"></a>
