@@ -47,6 +47,7 @@ html {
     display: none;
 }
 
+
 #menu:checked ~ .menu-mobile {
     position: fixed;
     top: 6.2rem;
