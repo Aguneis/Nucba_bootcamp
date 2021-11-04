@@ -1,0 +1,553 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1rem;
+}
+
+.main__layout {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+      'hero         hero'
+      'main         main'
+      'testimonial  testimonial'
+      'banner       banner'
+      'footer       footer';
+}
+
+.header {
+    height: 10vh;
+    position: absolute;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.navbar__logo {
+    margin-left: 1.5rem;
+}
+
+.navbar__menu-img {
+    margin-right: 1.5rem;
+}
+
+#navbar__menu {
+    display: none;
+}
+
+#navbar__menu:checked ~ .navbar__menu--mobile {
+    position: absolute;
+    box-sizing: border-box;
+    top: 6.8rem;
+    height: 40vh;
+    right: 1.2rem;
+    left: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    background-color: hsl(0, 0%, 100%);
+    font-family: 'Barlow', sans-serif;
+    line-height: 4rem;
+    font-size: 1.3rem;
+} 
+
+.navbar__menu--mobile::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-bottom: 3rem solid hsl(0, 0%, 100%);
+    border-left: 3rem solid transparent;
+    position: absolute;
+    top: -1.5rem;
+    right: 0;
+}
+
+.navbar__mobile--item {
+    text-decoration: none;
+    color: hsl(213, 9%, 39%);
+}
+
+.navbar__mobile--item:hover {
+    background: hsl(51, 100%, 49%);
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    color: hsl(216, 24%, 8%);
+    font-family: 'Fraunces', serif;;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.navbar__menu--mobile {
+    display: none;
+}
+
+.navbar__menu--desktop {
+    display: none;
+}
+
+.navbar__menu--item {
+    text-decoration: none;
+}
+
+.hero__banner {
+    grid-area: hero;
+    background-image: url(../images/mobile/image-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    padding-top: 10vh;
+}
+
+.hero__banner--title {
+    color: hsl(0, 0%, 100%);
+    margin-top: 5.2rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 2.5rem;
+    letter-spacing: 0.4rem;
+}
+
+.hero__banner--img {
+    align-self: center;
+    margin-top: 3.3rem;
+}
+
+.main__container {
+    grid-area: main;
+}
+
+.product__img--egg {
+    background-image: url(../images/mobile/image-transform.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+}
+
+.product__img--cup {
+    background-image: url(../images/mobile/image-stand-out.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+}
+
+.product__container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0.3rem;
+}
+
+.product__title {
+    color: hsl(212, 27%, 19%);
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 2.1rem;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.product__description {
+    color: hsl(232, 10%, 55%);
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 1rem 0.5rem;
+    line-height: 1.9rem;
+}
+
+.product__button {
+    align-self: center;
+    margin-top: 1.1rem;
+    margin-bottom: 4rem;
+    background: none;
+    border: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    color: hsl(212, 27%, 19%);
+}
+
+.btn--yellow::after {
+    content: '';
+    height: 13px;
+    width: 100%;
+    background-color: hsl(51, 100%, 49%, .5);
+    display: block;
+    border-radius: 50px;
+    margin-top: -8px;
+}
+
+.btn--yellow:hover::after  {
+    background-color: hsl(51, 100%, 49%);
+    cursor: pointer;
+}
+
+.btn--red::after {
+    content: '';
+    height: 13px;
+    width: 100%;
+    background-color: hsl(7, 99%, 70%, .5);
+    display: block;
+    border-radius: 50px;
+    margin-top: -8px;
+}
+
+.btn--red:hover::after  {
+    background-color: hsl(7, 99%, 70%) ;
+    cursor: pointer;
+}
+
+
+.product__container--cherry {
+    background-image: url(../images/mobile/image-graphic-design.jpg);
+    background-size: cover;
+    background-position:center ;
+    height: 68vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    color: hsl(167, 40%, 24%);
+}
+
+.product__container--orange {
+    background-image: url(../images/mobile/image-photography.jpg);
+    background-size: cover;
+    background-position:center ;
+    height: 68vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    color: hsl(198, 62%, 26%);
+}
+
+.product__title--blur {
+    font-size: 1.8rem;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+}
+
+.product__description--blur {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    text-align: center;
+    margin: 1.8rem 0.7rem 4rem 0.7rem;
+    transform: scaleY(1.1);
+}
+
+.testimonial__container {
+    grid-area: testimonial;
+}
+
+.testimonial__title {
+    margin-top: 4rem;
+    color: hsl(210, 4%, 67%);
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    letter-spacing: 0.3rem;
+}
+
+.testimonial__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.testimonial__card--img {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+}
+
+.testimonial__card--text {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.1rem;
+    text-align: center;
+    line-height: 1.9rem;
+    transform: scaleY(1.1);
+    color: hsl(213, 9%, 39%);
+    margin: 2.2rem 1.8rem 2.5rem 1.8rem;
+}
+
+.testimonial__card--name {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 1.2rem;
+    color:hsl(212, 27%, 19%) ;
+}
+
+.testimonial__card--profession {
+    font-family: 'Barlow', sans-serif;
+    color: hsl(210, 4%, 67%);
+    margin-top: 0.8rem;
+    font-size: 0.9rem;
+}
+
+.banner__container {
+    margin-top: 5.2rem;
+    grid-area: banner;
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+}
+
+.banner__img--bottles {
+    background-image:url(../images/mobile/image-gallery-milkbottles.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 20vh;
+}
+
+.banner__img--orange {
+    background-image: url(../images/mobile/image-gallery-orange.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 20vh;
+}
+
+.banner__img--cone {
+    background-image: url(../images/mobile/image-gallery-cone.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 20vh;
+}
+
+.banner__img--sugar {
+    background-image: url(../images/mobile/image-gallery-sugar-cubes.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 20vh;
+}
+
+.footer {
+    grid-area: footer;
+    background-color:hsl(168, 56%, 73%) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__logo {
+    filter: invert(48%) sepia(29%) saturate(640%) hue-rotate(117deg) brightness(95%) contrast(82%);;
+    width: 10rem;
+    margin-top: 4rem;
+}
+
+.footer__menu {
+    display: flex;
+    list-style: none;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer__menu--item {
+    text-decoration: none;
+    color: #458C7D;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.2rem;
+    margin: 0 1rem;
+}
+
+.footer__menu--item:hover {
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+.footer__links {
+    margin: 5rem 0;
+}
+
+.footer__links--logo {
+    margin: 0 0.5rem;
+}
+
+.footer__links--logo:hover {
+    filter: invert(99%) sepia(26%) saturate(0%) hue-rotate(310deg) brightness(112%) contrast(100%);
+    cursor: pointer;
+}
+
+@media (min-width: 724px) {
+    
+    .navbar__menu-img {
+        display: none;
+    }
+    
+    .navbar__menu--desktop {
+        display: flex;
+        list-style: none;
+        
+    }
+    
+    .navbar__menu--item {
+        font-family: 'Barlow', sans-serif;
+        font-weight: 700;
+        color: hsl(0, 0%, 100%);
+        margin: 0 1.5rem;
+    }
+
+    .contact {
+        text-transform: uppercase;
+        color: black;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 2rem;
+        padding: 1rem 2rem;
+    }
+
+    .contact:hover {
+        background-color: hsl(200, 95%, 75%);
+        color: hsl(0, 0%, 100%);
+        cursor: pointer;
+    }
+    
+    .hero__banner {
+        background-image: url(../images/desktop/image-header.jpg);
+    }
+    
+    .product__container--cherry {
+        background-image: url(../images/desktop/image-graphic-design.jpg);
+        height: 60vh;
+    }
+    
+    .product__container--orange {
+        background-image: url(../images/desktop/image-photography.jpg);
+        height: 60vh;
+    }
+    
+    .product__img--egg {
+        background-image: url(../images/mobile/image-transform.jpg);
+        height: 60vh;
+    }
+    
+    .product__img--cup {
+        background-image: url(../images/desktop/image-stand-out.jpg);
+        height: 60vh;
+    }
+    
+    .testimonial__container {
+        margin-top: 3rem;
+    }
+    
+    .testimonial__card--container {
+        display: flex;
+    }
+
+    .banner__container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .banner__img--bottles {
+        background-image:url(../images/desktop/image-gallery-milkbottles.jpg);
+        height: 45vh;
+    }
+    
+    .banner__img--orange {
+        background-image: url(../images/desktop/image-gallery-orange.jpg);
+        height: 45vh;
+    }
+    
+    .banner__img--cone {
+        background-image: url(../images/desktop/image-gallery-cone.jpg);
+        height: 45vh;
+    }
+    
+    .banner__img--sugar {
+        background-image: url(../images/desktop/image-gallery-sugarcubes.jpg);
+        height: 45vh;
+    }
+
+    .footer__menu--item {
+        margin: 0 2rem;
+    }
+
+    .footer__links {
+        margin: 3rem 0;
+    }
+
+    .footer__links--logo {
+        margin: 0 1rem;
+    }
+
+    @media (min-width: 992px) {
+        
+        .navbar__menu--desktop {
+            margin-right: 2.5rem;
+        }
+        
+        .main__container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(3, 35rem);
+            grid-auto-flow: dense;
+        }
+    
+        .product__img--egg {
+            height: 100%;
+            grid-column: 2 / 3;
+        }
+        
+        .product__img--cup {
+             height: 100%;
+        }
+
+        .product__container {
+            padding: 5rem;
+        }
+
+        .product__title {
+            text-align: left;
+            font-size: 2.5rem;
+        }
+        
+        .product__description {
+           text-align: left;
+           margin: 1.8rem 0 1rem 0;
+        }
+        
+        .product__button {
+            align-self: flex-start;
+        }
+        
+        .product__container--cherry {
+            height: auto;
+        }
+        
+        .product__container--orange {
+            height: auto;
+        }
+    
+        .product__description--blur {
+            padding: 0 8rem;
+        }
+    }
+}
