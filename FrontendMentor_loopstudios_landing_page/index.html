@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor Landing Page</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main__layout">
+        <header class="header">
+            <div class="container"> 
+                <nav class="navbar">   
+                    <a href="index.html"><img class="navbar__logo" src="./assets/logo.svg" alt="logo Marca"></a>
+                    <label for="navbar__menu"><img class="nabvar__menu--img" src="./assets/icon-hamburger.svg"></label>
+                    <input id="navbar__menu" type="checkbox">
+                    <ul class="navbar__menu--desktop">
+                        <li><a class="navbar__desktop--item" href="#" target="_self">About</a></li>
+                        <li><a class="navbar__desktop--item" href="#" target="_self">Career</a></li>
+                        <li><a class="navbar__desktop--item" href="#" target="_self">Events</a></li>
+                        <li><a class="navbar__desktop--item" href="#" target="_self">Products</a></li>
+                        <li><a class="navbar__desktop--item" href="#" target="_self">Support</a></li>
+                    </ul>     
+                    <ul class="navbar__menu--mobile">
+                        <li><a class="navbar__mobile--item" href="#" target="_self">About</a></li>
+                        <li><a class="navbar__mobile--item" href="#" target="_self">Career</a></li>
+                        <li><a class="navbar__mobile--item" href="#" target="_self">Events</a></li>
+                        <li><a class="navbar__mobile--item" href="#" target="_self">Products</a></li>
+                        <li><a class="navbar__mobile--item" href="#" target="_self">Support</a></li>
+                    </ul>
+                </nav>
+                <h1 class="header__title">Immersive experiences that deliver</h1>
+            </div>
+        </header>
+        <section class="banner__layout">
+            <div class="container">    
+                <div class="banner__container">  
+                    <div class="banner__img"></div>
+                    <div class="banner__card">
+                        <h2 class="banner__card--title">The leader in interactive VR</h2>
+                        <p class="banner__card--text">Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand.</p>
+                    </div>
+                </div>     
+            </div>
+        </section>
+        <main class="creations__layout">
+            <div class="container">   
+                <div class="creations__header">
+                    <h2 class="creations__header--title">Our creations</h2>
+                    <button class="creations__header--btn">See all</button>
+                </div>
+                <div class="creations__cards--container">
+                    <div class="card card--earth"> 
+                        <span>Deep</span>
+                        <span>earth</span>
+                    </div>
+                    <div class="card card--arcade"> 
+                        <span>Night</span>
+                        <span>arcade</span>
+                    </div>
+                    <div class="card card--soccer"> 
+                        <span>Soccer</span>
+                        <span>team VR</span>
+                    </div>
+                    <div class="card card--thegrid">
+                        <span>The </span>
+                        <span>grid</span>
+                    </div>
+                    <div class="card card--from"> 
+                        <span>From up</span>
+                        <span>above VR</span>
+                    </div>
+                    <div class="card card--borealis">
+                        <span>Pocket </span>
+                        <span>borealis</span>
+                    </div>
+                    <div class="card card--curiosity"> 
+                        <span>The</span>
+                        <span>curiosity</span>
+                    </div>
+                    <div class="card card--fisheye"> 
+                        <span>Make it</span>
+                        <span>fisheye</span>
+                    </div>
+                </div>
+                <div class="creations__mobile--container">
+                    <button class="creations__mobile--btn">See all</button>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">   
+                <div class="footer__container"> 
+                    <div>
+                        <img src="./assets/logo.svg" alt="Logo" class="footer__logo">
+                        <ul class="footer__menu">
+                            <li><a class="footer__menu--item" href="#">About</a></li>
+                            <li><a class="footer__menu--item" href="#">Career</a></li>
+                            <li><a class="footer__menu--item" href="#">Events</a></li>
+                            <li><a class="footer__menu--item" href="#">Products</a></li>
+                            <li><a class="footer__menu--item" href="#">Support</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="footer__links">
+                            <a href="https://www.facebook.com"><img class="footer__link--logo" src="./assets/icon-facebook.svg" alt="Logo Facebook" target="_blank"></a>
+                            <a href="https://www.twitter.com"><img class="footer__link--logo" src="./assets/icon-twitter.svg" alt="Logo Twitter" target="_blank"></a>
+                            <a href="https://www.pinterest.com"><img class="footer__link--logo" src="./assets/icon-pinterest.svg" alt="Logo Pinterest" target="_blank"></a>
+                            <a href="https://www.instagram.com"><img class="footer__link--logo" src="./assets/icon-instagram.svg" alt="Logo Instagram" target="_blank"></a>
+                        </div>
+                        <span class="footer__rights">© 2021 Loopstudios. All rights reserved.</span>
+                    </div>
+                </div>   
+            </div>
+        </footer>
+    </div>
+    
+</body>
+</html>

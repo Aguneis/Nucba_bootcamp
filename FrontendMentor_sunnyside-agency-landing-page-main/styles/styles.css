@@ -100,7 +100,7 @@ html {
     display: none;
 }
 
-.navbar__menu--item {
+.navbar__desktop--item {
     text-decoration: none;
 }
 
@@ -409,7 +409,7 @@ html {
         
     }
     
-    .navbar__menu--item {
+    .navbar__desktop--item {
         font-family: 'Barlow', sans-serif;
         font-weight: 700;
         color: hsl(0, 0%, 100%);

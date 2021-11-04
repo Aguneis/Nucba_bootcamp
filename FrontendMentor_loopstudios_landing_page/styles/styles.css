@@ -8,7 +8,7 @@ html {
     font-size: 1rem;
 }
 
-.main-layout {
+.main__layout {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
@@ -20,7 +20,7 @@ html {
       'footer       footer';
 }
 
-.margin-conteiner {
+.container {
     margin: 0 1.5rem;
 }
 
@@ -38,19 +38,27 @@ html {
     margin: 2.5rem  0rem;
 }
 
-.logo {
+.navbar__logo {
     width: 9rem;
     height: auto;
+    position: absolute;
+    z-index: 1;
 }
 
-#menu {
+.nabvar__menu--img {
+    position: absolute;
+    z-index: 2;
+    right: 1.5rem;
+}
+
+#navbar__menu {
     display: none;
 }
 
-
-#menu:checked ~ .menu-mobile {
-    position: fixed;
-    top: 6.2rem;
+#navbar__menu:checked ~ .navbar__menu--mobile {
+    z-index: 0;
+    position: absolute;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
@@ -66,27 +74,24 @@ html {
     font-size: 1.6rem;
 }   
 
-.menu-desktop {
+.navbar__menu--desktop {
     display: none;
 }
 
-.menu-mobile {
+.navbar__menu--mobile {
     display: none;
 }
 
-.item-mobile {
+.navbar__mobile--item {
     margin-left: 1.5rem;
-}
-
-.sections-mobile {
     color: hsl(0, 0%, 100%);
     text-decoration: none;
 }
 
-.header-title {
+.header__title {
     border: 2px solid hsl(0, 0%, 100%);
     margin: 10.2rem 0 14.5rem 0;
-    padding: 1.7rem 1.6rem 1.2rem  1.6rem;
+    padding: 1.7rem 1.6rem 1.2rem 1.6rem;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: lighter;
     font-size: 2.5rem;
@@ -96,24 +101,27 @@ html {
     bottom: 0;
 }
 
-.banner-layout {
+.banner__layout {
     grid-area: banner;
 }
 
-.img-banner-mobile {
+.banner__container {
+    margin-top: 6rem;
+}
+
+.banner__img {
+    background-image: url(../assets/mobile/image-interactive.jpg);
+    background-size: cover;
+    background-position: center;
     width: 100%;
-    margin-top: 6.2rem;
+    height: 25vh;
 }
 
-.banner-desktop {
-    display: none;
-}
-
-.banner-card {
+.banner__card {
     margin-top: 2.8rem;
 }
 
-.banner-card-title {
+.banner__card--title {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 2rem;
     font-weight: lighter;
@@ -121,7 +129,7 @@ html {
     text-transform: uppercase;
 }
 
-.banner-card-text {
+.banner__card--text {
     margin-top: 1.3rem;
     padding: 0 0.5rem;
     font-family: 'Alata', sans-serif;
@@ -130,11 +138,11 @@ html {
     text-align: center;
 }
 
-.main {
+.creations__layout {
     grid-area: main;
 }
 
-.section-header-title {
+.creations__header--title {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 2rem;
     font-weight: lighter;
@@ -143,11 +151,11 @@ html {
     margin-top: 6.2rem;
 }
 
-.section-btn {
+.creations__header--btn {
     display: none;
 }
 
-.section-layout {
+.creations__cards--container {
     margin-top: 3.1rem;
     display: grid;
     gap: 1.5rem;
@@ -169,65 +177,66 @@ html {
 }
 
 .card:hover {
-    opacity: 0.3;
+    opacity: 0.4;
+    cursor: pointer;
 }
 
-.n1 {
+.card--earth {
     background-image: url(../assets/mobile/image-deep-earth.jpg);
     background-position: center;
     background-size: cover;
 }
 
-.n2 {
+.card--arcade {
     background-image: url(../assets/mobile/image-night-arcade.jpg);
     background-position: center;
     background-size: cover;
 }
 
-.n3 {
+.card--soccer {
     background-image: url(../assets/mobile/image-soccer-team.jpg);
     background-position: center;
     background-size: cover;
 }
 
-.n4 {
+.card--thegrid {
     background-image: url(../assets/mobile/image-grid.jpg);
     background-position: center;
     background-size: cover;
 }
 
-.n5 {
+.card--from {
     background-image: url(../assets/mobile/image-from-above.jpg);
     background-position: center;
     background-size: cover;
 }
 
-.n6 {
+.card--borealis {
     background-image: url(../assets/mobile/image-pocket-borealis.jpg);
     background-position: center;
     background-size: cover;
 }
 
-.n7 {
+.card--curiosity {
     background-image: url(../assets/mobile/image-curiosity.jpg);
     background-position: center;
     background-size: cover;
 }
 
-.n8 {
+.card--fisheye {
     background-image: url(../assets/mobile/image-fisheye.jpg);
     background-position: center;
     background-size: cover;
 }
 
-.mobile-btn-conteiner {
+.creations__mobile--container {
     display: flex;
     justify-content: center;
     margin-top: 2.2rem;
     margin-bottom: 6rem;
 }
 
-.mobile-btn {
+.creations__mobile--btn {
     padding: 1rem 2.6rem 0.7rem 2.6rem;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: bolder;
@@ -237,9 +246,10 @@ html {
     border: 1px solid;
 }
 
-.mobile-btn:hover {
+.creations__mobile--btn:hover {
     background-color: hsl(0, 0%, 0%);
     color: hsl(0, 0%, 100%);
+    cursor: pointer;
 }
 
 .footer {
@@ -248,54 +258,68 @@ html {
     padding-bottom: 4rem;
 }
 
-.footer-conteiner {
+.footer__container {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 3.8rem;
 }
 
-.footer-logo {
+.footer__logo {
     width: 9rem;
     height: auto;
 }
 
-.menu-footer {
+.footer__menu {
     margin-top: 1.4rem;
     list-style: none;
     font-family:'Alata', sans-serif; 
     line-height: 2.6rem;
-}
-
-.sections-footer {
-    text-decoration: none;
-    color: hsl(0, 0%, 100%);
-}
-
-.sections-footer:hover {
-    border-bottom: 1px solid hsl(0, 0%, 100%);
-}
-
-.item-footer-menu {
     text-align: center;
 }
 
-.footer-networks {
+.footer__menu--item {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    position: relative;
+}
+
+.footer__menu--item::before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    border-radius: 4px;
+    background-color: hsl(0, 0%, 100%);
+    bottom: -0.5rem;
+    left: 25%;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.footer__menu--item:hover::before { 
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.footer__links {
     display: flex;
     justify-content: center;
     margin-top: 2rem;
 }
 
-.link-img {
+.footer__link--logo {
     margin: 0.5rem;
     padding-bottom: 0.5rem;
 }
 
-.link-img:hover {
-    border-bottom: 1px solid hsl(0, 0%, 100%);
+.footer__link--logo:hover {
+    border-bottom: 2px solid hsl(0, 0%, 100%);
+    cursor: pointer;
 }
 
-.footer-rights {
+.footer__rights {
     margin-top: 2rem;
     color: hsl(0, 0%, 41%);
     font-family:'Alata', sans-serif;
@@ -307,35 +331,55 @@ html {
         margin: 3.7rem  0rem;
     }
 
-    .logo-menu {
+    .nabvar__menu--img {
         display: none;
     }
 
-    .menu-desktop {
+    .navbar__menu--desktop {
         display: flex;
         list-style: none;
         font-family:'Alata', sans-serif;
         font-size: 0.8rem;
     }
     
-    .sections-desktop {
+    .navbar__desktop--item {
         color: hsl(0, 0%, 100%);
         text-decoration: none;
         margin-left: 1.7rem;
         margin-right: 0.5rem;
+        position: relative;
     }
 
-    .sections-desktop:hover {
-        border-bottom: 1px solid hsl(0, 0%, 100%);
+    .navbar__desktop--item::before {
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 2px;
+        border-radius: 4px;
+        background-color: hsl(0, 0%, 100%);
+        bottom: -0.5rem;
+        left: 25%;
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform .3s ease-in-out;
     }
     
-    .section-header {
+    .navbar__desktop--item:hover::before { 
+        transform-origin: left;
+        transform: scaleX(1);
+    }
+
+    .banner__img {
+        height: 50vh;
+    }
+    
+    .creations__header {
         display: flex;
         justify-content: space-between;
         margin-top: 4rem;
     }
 
-    .section-btn {
+    .creations__header--btn {
         display: inline;
         padding: 1rem 2.6rem 0.7rem 2.6rem;
         font-family: 'Josefin Sans', sans-serif;
@@ -348,16 +392,17 @@ html {
         align-self: flex-end;
     }
 
-    .section-btn:hover {
+    .creations__header--btn:hover {
         background-color: hsl(0, 0%, 0%);
         color: hsl(0, 0%, 100%);
+        cursor: pointer;
     }
 
-    .section-layout {
+    .creations__cards--container {
         grid-auto-rows: 20rem;
     }
     
-    .mobile-btn-conteiner {
+    .creations__mobile--container {
         display: none;
     }
 
@@ -366,22 +411,22 @@ html {
         padding-bottom: 1.5rem;
     }
     
-    .footer-conteiner {
+    .footer__container {
         flex-direction: row;
         justify-content: space-between;
         margin-top: 2.5rem;
     }
     
-    .menu-footer {
+    .footer__menu {
         display: flex;
     }
     
-    .item-footer-menu {
+    .footer__menu--item {
         margin-right: 1.5rem;
         font-size: 0.9rem;
     }
     
-    .footer-networks {
+    .footer__links {
         margin-top: 0;
         margin-bottom: 1rem;
         justify-content: end;
@@ -390,7 +435,7 @@ html {
 
 @media (min-width: 1024px) {
   
-    .margin-conteiner {
+    .container {
         margin: 0 8rem;
     }
 
@@ -399,7 +444,7 @@ html {
         background-position: bottom;
     }
 
-    .header-title {
+    .header__title {
         width: 60%;
         padding: 1.8rem 1.6rem 1.6rem  1.6rem;
         margin-top: 6.9rem;
@@ -408,32 +453,25 @@ html {
         line-height: 3.8rem;
     }
 
-    .banner-layout {
+    .banner__layout {
         margin-top: 7rem;
     }
 
-    .banner-conteiner {
+    .banner__container {
         display: grid;
         grid-template-columns: repeat(8, 1fr);
         grid-template-rows: repeat(3, 1fr);
     }
 
-    .banner-mobile {
-        display: none;
-    }
-
-    .banner-desktop {
+    .banner__img {
+        background-image: url(../assets/desktop/image-interactive.jpg);
         display: inline;
         grid-column: 1 / 6;
-        grid-row: 1 /4;
-    }
-    
-    .img-banner-desktop {
-        width: 100%;
+        grid-row: 1 / 4;
         height: 100%;
     }
 
-    .banner-card {
+    .banner__card {
         margin: 0;
         padding-top: 4rem;
         padding-left: 5rem;
@@ -442,12 +480,12 @@ html {
         grid-row: 2 / 4;
     }
 
-    .banner-card-title {
+    .banner__card--title {
         text-align: left;
         font-size: 3rem;
     }
 
-    .banner-card-text {
+    .banner__card--text {
         font-size: 0.9rem;
         text-align: left;
         padding: 0;
@@ -455,11 +493,11 @@ html {
         align-items: end;
     }
     
-    .section-header-title {
+    .creations__header--title {
         font-size: 2.8rem;
     }
     
-    .section-layout {
+    .creations__cards--container {
        grid-auto-rows: 30rem;
     }
 
@@ -468,34 +506,35 @@ html {
         padding: 1.7rem;
     }
 
-    .n1 {
+    .card--earth {
         background-image: url(../assets/desktop/image-deep-earth.jpg);
     }
     
-    .n2 {
+    .card--arcade {
         background-image: url(../assets/desktop/image-night-arcade.jpg);
     }
     
-    .n3 {
+    .card--soccer {
         background-image: url(../assets/desktop/image-soccer-team.jpg);
     }
-    .n4 {
+    
+    .card--thegrid {
         background-image: url(../assets/desktop/image-grid.jpg);
     }
     
-    .n5 {
+    .card--from {
         background-image: url(../assets/desktop/image-from-above.jpg);
     }
     
-    .n6 {
+    .card--borealis {
         background-image: url(../assets/desktop/image-pocket-borealis.jpg);
     }
     
-    .n7 {
+    .card--curiosity {
         background-image: url(../assets/desktop/image-curiosity.jpg);
     }
     
-    .n8 {
+    .card--fisheye {
         background-image: url(../assets/desktop/image-fisheye.jpg);
     }
 }
