@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backup Sistemas de Seguridad</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar container">
+            <a href="index.html"><img class="navbar__logo" src="assets/logo_marca.png" alt="logo Backup"></a>
+            <ul class="navbar__menu">
+                    <li><a class="navbar__link" href="#" target="_self">Nosotros</a></li>
+                    <li><a class="navbar__link" href="#" target="_self">Servicios</a></li>
+                    <li><a class="navbar__link" href="#" target="_self">Instalacion</a></li>
+                    <li><a class="navbar__link" href="#" target="_self">Contacto</a></li>
+            </ul>
+            <div class="navbar__btn--container">
+            <button class="navbar__btn--login" type="button"><img class="btn__login" src="assets/icono_login.png" alt="Logo Registrarse"></button>
+            <button class="navbar__btn--hamb" type="button"><img class="btn__hamb" src="assets/icono_hamb.png" alt="Logo Menu"></button>
+            <button class="btn_hamb--close hidden">&times;</button>
+
+            </div>
+        </nav>
+    </header>
+    <div class="login modal hidden">
+        <form action="">
+            <button class="login__close">&times;</button>
+            <h3 class="login__title">Ingresa</h3>
+            <label for="email">
+                <input class="login__input" type="email" name="email" placeholder="Ingrese email" required>
+            </label>
+            <label for="password">
+                <input class="login__input" type="password" name="password" placeholder="Ingrese Contraseña" required>
+            </label>
+            <button type="submit" class="btn">Ingresa</button>
+            <p>¿No tienes cuenta?</p>
+            <button type="button" class="btn signup__btn">Registrate</button>
+        </form>
+    </div>
+    <div class="signup modal hidden ">
+        <form action=""> 
+            <button class="login__close signup__close">&times;</button>
+            <h3 class="login__title">Registrate</h3>
+            <label for="name">
+                <input class="login__input" type="text" name="name" placeholder="Nombre Completo" required>
+            </label>
+            <label for="birth">
+                <input class="login__input" type="number" name="birth" placeholder="Año de Nacimiento " required>
+            </label>
+            <label for="email">
+                <input class="login__input" type="email" name="email" placeholder="email" required>
+            </label>
+            <label for="password">
+                <input class="login__input" type="password" name="password" placeholder="Contraseña" required>
+            </label>
+            <label for="password">
+                <input class="login__input" type="password" name="password" placeholder="Repita Contraseña" required>
+            </label>
+            <button type="submit" class="btn">Enviar</button>
+        </form>   
+    </div>
+    <div class="overlay hidden"></div>    
+    <section class="hero">
+        <img class="hero__img container" src="assets/hero_img.png" alt="Imagen Camara">
+        <div class="hero__info container">
+            <h1 class="hero__title">Sistemas de Seguridad</h1>
+            <p class="hero__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eius quasi corporis. Nesciunt corrupti numquam recusandae, voluptatem harum consectetur perferendis.</p>
+            <button class="hero__btn btn">Conocenos</button>
+        </div>
+    </section>
+    
+        
+    <section class="about-us container">
+        <div class="about-us__container">
+            <h2 class="about-us__title">Nosotros</h2>
+            <p class="about-us__info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias perspiciatis nam et officiis earum voluptate, sed vitae consequatur ipsa, in dignissimos incidunt. Quo necessitatibus quos cupiditate nostrum quae eius rerum quam voluptatibus, odio veritatis voluptates vero voluptate similique sint perspiciatis sunt? Natus saepe sequi tempora minima laudantium voluptate nostrum facilis.</p>
+        </div>
+        <img class="about-us__img" src="" alt="">
+    </section>
+    <section class="products container">
+        <div class="products__header">
+            <h2 class="products__title">Productos</h2>
+            <p class="products__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat ullam atque nisi voluptatum, harum sint qui quia quisquam esse ducimus!</p>
+        </div>
+        <div class="products__container">
+            <article class="products__card">
+                <img class="card__img" src="" alt="Foto de Producto">
+                <div class="card__info">
+                    <h4>Hikvision</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, odio.</p>
+                    <button class="card__btn btn">+ Info</button>
+                </div>
+            </article>
+            <article class="products__card">
+                <img class="card__img" src="" alt="Foto de Producto">
+                <div class="card__info">
+                    <h4>Hikvision</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, odio.</p>
+                    <button class="card__btn btn">+ Info</button>
+                </div>
+            </article>
+            <article class="products__card">
+                <img class="card__img" src="" alt="Foto de Producto">
+                <div class="card__info">
+                    <h4>Hikvision</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, odio.</p>
+                    <button class="card__btn btn">+ Info</button>
+                </div>
+            </article>
+            <article class="products__card">
+                <img class="card__img" src="" alt="Foto de Producto">
+                <div class="card__info">
+                    <h4>Hikvision</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, odio.</p>
+                    <button class="card__btn btn">+ Info</button>
+                </div>
+            </article>
+            <article class="products__card">
+                <img class="card__img" src="" alt="Foto de Producto">
+                <div class="card__info">
+                    <h4>Hikvision</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, odio.</p>
+                    <button class="card__btn btn">+ Info</button>
+                </div>
+            </article>
+            <article class="products__card">
+                <img class="card__img" src="" alt="Foto de Producto">
+                <div class="card__info">
+                    <h4>Hikvision</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, odio.</p>
+                    <button class="card__btn btn">+ Info</button>
+                </div>
+            </article>
+            <article class="products__card">
+                <img class="card__img" src="" alt="Foto de Producto">
+                <div class="card__info">
+                    <h4>Hikvision</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, odio.</p>
+                    <button class="card__btn btn">+ Info</button>
+                </div>
+            </article>
+            <article class="products__card">
+                <img class="card__img" src="" alt="Foto de Producto">
+                <div class="card__info">
+                    <h4>Hikvision</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, odio.</p>
+                    <button class="card__btn btn">+ Info</button>
+                </div>
+            </article>
+            <article class="products__card">
+                <img class="card__img" src="" alt="Foto de Producto">
+                <div class="card__info">
+                    <h4>Hikvision</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, odio.</p>
+                    <button class="card__btn btn">+ Info</button>
+                </div>
+            </article>
+            <article class="products__card">
+                <img class="card__img" src="" alt="Foto de Producto">
+                <div class="card__info">
+                    <h4>Hikvision</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, odio.</p>
+                    <button class="card__btn btn">+ Info</button>
+                </div>
+            </article>
+        </div>
+
+    </section>
+    <section class="installation container">
+        <h2 class="installation__title">Instalacion</h2>
+        <article class="installation__container1">
+            <p class="installation__info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi asperiores accusantium cumque facere dicta explicabo dolorum laudantium perferendis minima, repudiandae cupiditate adipisci enim, iusto aperiam aliquam quis quidem necessitatibus earum aliquid similique quaerat libero error alias! Similique ea deleniti nam sunt nisi ratione voluptate illo temporibus! Enim suscipit possimus sequi.</p>
+            <img class="installation__img1" src="" alt="Foto Instalacion">
+        </article>
+        <article class="installation__container2">
+            <p class="installation__info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi asperiores accusantium cumque facere dicta explicabo dolorum laudantium perferendis minima, repudiandae cupiditate adipisci enim, iusto aperiam aliquam quis quidem necessitatibus earum aliquid similique quaerat libero error alias! Similique ea deleniti nam sunt nisi ratione voluptate illo temporibus! Enim suscipit possimus sequi.</p>
+            <img class="installation__img2" src="" alt="Foto Instalacion">
+        </article>
+    </section>
+    <section class="contact-us container">
+        <h2 class="contact-us__title">Envie su consulta</h2>
+        <form  action="">
+            <label for="">
+                <input type="email">
+            </label>
+            <label for="">
+                <input type="text">
+            </label>
+            <button>Enviar</button>
+        </form>
+
+    </section>
+    <footer class="footer">
+
+    </footer>
+    
+    <script src="main.js"></script>
+</body>
+</html>

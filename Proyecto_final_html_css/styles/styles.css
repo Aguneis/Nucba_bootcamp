@@ -1,0 +1,342 @@
+@font-face {
+  font-family: Roboto;
+  src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-blue: hsl(233, 26%, 24%);
+  --lime-green: hsl(136, 65%, 51%);
+  --bright-cyan: hsl(192, 70%, 51%);
+  --grayish-blue: hsl(233, 8%, 62%);
+  --light-grayish-blue: hsl(220, 16%, 96%);
+  --very-light-gray: hsl(0, 0%, 98%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  font-size: 1rem;
+  font-family: Roboto;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+.btn {
+  margin: 2rem 0;
+  background: none;
+  border: 2px solid #fafafa;
+  color: red;
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  font-weight: bolder;
+  transition: box-shadow 400ms ease-in-out, color 400ms ease-in-out;
+}
+
+.btn:hover, .btn:focus {
+  box-shadow: 0 0 40px 40px red inset;
+  color: #fafafa;
+  
+}
+
+.hidden {
+  display: none;
+}
+
+.active {
+  display: flex;
+}
+
+.header {
+  width: 100%;
+  background-color: rgb(19, 18, 18);
+  padding-top: 2rem;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar__logo {
+  width: 8rem;
+}
+
+.navbar__menu {
+  height: 92vh;
+  width: 100%;
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  opacity: 0;
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 12%;
+  background-color: rgb(19, 18, 18);
+}
+
+.navbar__menu.active {
+  display: flex;
+  animation: openMenu 500ms ease-in-out both;
+}
+
+.navbar__link {
+  text-decoration: none;
+  color: #fafafa;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  position: relative;
+}
+
+.navbar__link::before {
+  content: '';
+  position: absolute;
+  width: 80%;
+  height: 3px;
+  border-radius: 4px;
+  background-color: red;
+  bottom: -0.5rem;
+  left: 10%;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
+
+.navbar__link:hover::before { 
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.navbar__btn--container {
+  display: flex;
+  align-items: center;
+}
+
+
+.navbar__btn--login {
+  background: none;
+  border: none;
+  cursor: pointer;
+  
+}
+
+.btn__login {
+  width: 2rem;
+}
+
+.navbar__btn--hamb {
+  background: none;
+  border: none;
+  cursor: pointer;
+  
+}
+.btn__hamb {
+  width: 2rem;
+  margin-left: 1rem;
+}
+
+.btn_hamb--close {
+  color: #fafafa;
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-size: 3rem;
+  margin-left: 1rem;
+}
+
+.btn_hamb--close {
+
+}
+
+
+.modal {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 85%;
+  max-width: 27rem;
+  background-color: black;
+  padding: 3.5rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 3;
+  color: #fafafa;
+  text-align: center;
+  animation: openLogin 550ms ease-in-out both;
+  
+}
+
+.login__close {
+  position: absolute;
+  top: 1rem;
+  right: 1.2rem;
+  font-size: 2rem;
+  color: #fafafa;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.login__title {
+  position: relative;
+  display: inline-block;
+}
+
+.login__title::before {
+  content: '';
+  position: absolute;
+  width: 20%;
+  height: 3px;
+  border-radius: 4px;
+  background-color: red;
+  bottom: -0.05rem;
+  left: 80%;
+}
+
+
+.login__input {
+  border: 0;
+  border-bottom: 1px solid #fafafa;
+  background: none;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.signup {
+  z-index: 3;
+}
+
+/* Para hacer el Login*/
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 1;
+}
+
+/*.btn__hamb {
+    width: 2rem;
+    
+}
+/*.navbar__btn-close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    top: 2.5rem;
+    right: 2.1rem;
+    font-size: 2rem;
+    color: #fafafa;
+    display: none;
+}
+
+/*.remove {
+    display: none;
+}
+.active {
+    display: block;
+}
+*/
+.hero {
+  background-color: rgb(19, 18, 18);
+  height: 90vh;
+}
+
+.hero__img {
+  width: 100%;
+  animation: imagen 800ms ease-in-out;
+}
+
+.hero__info {
+  color: #fafafa;
+  text-align: center;
+}
+
+.hero__title {
+  animation: texto 600ms ease-in-out;
+  
+  color: red;
+  
+  
+}
+
+
+
+
+.hero__description {
+  margin-top: 1rem;
+  animation: texto 600ms ease-in-out ;
+  
+  
+}
+
+.hero__btn {
+  animation: openMenu 600ms ease-in-out;
+}
+
+
+
+@keyframes openLogin {
+  from {
+    top: 0;
+  }
+  to {
+    top: 50%;
+  }
+}
+
+@keyframes openMenu {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+@keyframes imagen {
+  from {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes texto {
+  from {
+    clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+    opacity: 0;
+    transform: translateY(-40%);
+  }
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
