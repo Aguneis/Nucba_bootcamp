@@ -39,7 +39,7 @@ const closeModal = () => {
     loginModal.classList.add('hidden');
     overlay.classList.add('hidden');
     signupModal.classList.add('hidden');
-    btnHambClose.classList.remove('active');
+    btnHambClose.classList.add('hidden');
     btnHamb.classList.remove('hidden');
 };
 

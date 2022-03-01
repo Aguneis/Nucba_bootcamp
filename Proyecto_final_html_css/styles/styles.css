@@ -1,8 +1,7 @@
 @font-face {
   font-family: Roboto;
-  src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
 }
-
 
 * {
   padding: 0;
@@ -35,26 +34,29 @@ body {
 .btn {
   margin: 2rem 0;
   background: none;
-  border: 2px solid #fafafa;
+  border: 2px solid red;
   color: red;
   padding: 0.5rem 1rem;
-  border-radius: 15px;
+  border-radius: 10px;
   font-weight: bolder;
   transition: box-shadow 400ms ease-in-out, color 400ms ease-in-out;
+  animation: openMenu 500ms ease-in;
 }
 
-.btn:hover, .btn:focus {
+.btn:hover,
+.btn:focus {
   box-shadow: 0 0 40px 40px red inset;
+
   color: #fafafa;
-  
+  cursor: pointer;
 }
 
 .hidden {
   display: none;
 }
 
-.active {
-  display: flex;
+.m-top__container {
+  margin-top: 2rem;
 }
 
 .header {
@@ -103,7 +105,7 @@ body {
 }
 
 .navbar__link::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 80%;
   height: 3px;
@@ -113,12 +115,13 @@ body {
   left: 10%;
   transform-origin: right;
   transform: scaleX(0);
-  transition: transform .3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
-.navbar__link:hover::before { 
+.navbar__link:hover::before {
   transform-origin: left;
   transform: scaleX(1);
+  cursor: pointer;
 }
 
 .navbar__btn--container {
@@ -126,12 +129,10 @@ body {
   align-items: center;
 }
 
-
 .navbar__btn--login {
   background: none;
   border: none;
   cursor: pointer;
-  
 }
 
 .btn__login {
@@ -142,7 +143,6 @@ body {
   background: none;
   border: none;
   cursor: pointer;
-  
 }
 .btn__hamb {
   width: 2rem;
@@ -159,9 +159,7 @@ body {
 }
 
 .btn_hamb--close {
-
 }
-
 
 .modal {
   position: absolute;
@@ -173,12 +171,10 @@ body {
   background-color: black;
   padding: 3.5rem;
   border-radius: 5px;
-  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   z-index: 3;
   color: #fafafa;
   text-align: center;
   animation: openLogin 550ms ease-in-out both;
-  
 }
 
 .login__close {
@@ -198,7 +194,7 @@ body {
 }
 
 .login__title::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 20%;
   height: 3px;
@@ -207,7 +203,6 @@ body {
   bottom: -0.05rem;
   left: 80%;
 }
-
 
 .login__input {
   border: 0;
@@ -222,7 +217,6 @@ body {
 }
 
 /* Para hacer el Login*/
-
 
 .overlay {
   position: absolute;
@@ -261,12 +255,15 @@ body {
 */
 .hero {
   background-color: rgb(19, 18, 18);
-  height: 90vh;
+  height: 92vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .hero__img {
   width: 100%;
   animation: imagen 800ms ease-in-out;
+  max-width: 35rem;
 }
 
 .hero__info {
@@ -276,27 +273,200 @@ body {
 
 .hero__title {
   animation: texto 600ms ease-in-out;
-  
+
   color: red;
-  
-  
+  text-shadow: 0 0.1rem 0.5rem red;
 }
-
-
-
 
 .hero__description {
   margin-top: 1rem;
-  animation: texto 600ms ease-in-out ;
-  
-  
+  animation: texto 600ms ease-in-out;
+  position: relative;
 }
 
 .hero__btn {
-  animation: openMenu 600ms ease-in-out;
+  text-shadow: 0 0.1rem 0.5rem red;
+  border: 2px solid #fafafa;
 }
 
+.about-us {
+}
 
+.about-us__wrapper {
+}
+
+.about-us__title {
+}
+
+.about-us__info {
+}
+
+.about-us__img {
+  width: 100%;
+  border-radius: 3px;
+  box-shadow: 0 1rem 2rem rgb(0 0 0 / 30%);
+  margin-bottom: 1rem;
+}
+
+.services {
+}
+
+.services__header {
+}
+
+.services__title {
+}
+
+.services__info {
+}
+
+.services__wrapper {
+}
+
+.services__card {
+}
+
+.card__img {
+}
+
+.card__info {
+}
+
+.card__title {
+}
+
+.card__description {
+}
+
+.card__btn {
+}
+
+.installation {
+}
+
+.installation__title {
+}
+
+.installation__wrapper1 {
+}
+
+.installation__info {
+}
+
+.installation__img1 {
+  width: 100%;
+  border-radius: 3px;
+  box-shadow: 0 1rem 2rem rgb(0 0 0 / 30%);
+  margin-bottom: 1rem;
+}
+
+.installation__wrapper2 {
+}
+
+.installation__img2 {
+  width: 100%;
+  border-radius: 3px;
+  box-shadow: 0 1rem 2rem rgb(0 0 0 / 30%);
+  margin-bottom: 1rem;
+}
+
+.contact-us {
+  padding: 2rem 0;
+  max-width: 27rem;
+
+  border-radius: 8px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  margin: 3rem auto;
+  position: relative;
+}
+
+.contact-us::after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 1px;
+  top: -2rem;
+  left: 10%;
+  background-color: rgb(19, 18, 18);
+}
+
+.contact-us__title {
+  text-align: center;
+  position: relative;
+}
+
+.contact-us__title::before {
+  content: "";
+  position: absolute;
+  width: 5%;
+  height: 3px;
+  border-radius: 4px;
+  background-color: red;
+  bottom: -0.05rem;
+  left: 68%;
+}
+
+.contact-us__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-us__imput {
+  border: 0;
+  border-bottom: 1px solid rgb(19, 18, 18);
+  background: none;
+  margin-top: 2rem;
+  width: 100%;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.textarea {
+  font-family: "Roboto";
+
+  padding: 0;
+}
+
+.contact-us__btn {
+  border: 2px solid red;
+}
+
+.footer {
+  background-color: rgb(19, 18, 18);
+  padding: 4rem 0rem;
+}
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__logo {
+  width: 8rem;
+}
+
+.footer_links--wrapped {
+  text-align: center;
+}
+.footer__links {
+  margin-top: 1.5rem;
+}
+
+.footer__link--logo {
+  width: 1.5rem;
+  margin: 1rem;
+}
+
+.footer__link--logo:hover {
+  animation: openMenu 500ms ease-in;
+}
+
+.footer__rights {
+  margin-top: 2rem;
+  color: hsl(0, 0%, 41%);
+  font-size: 0.8rem;
+}
 
 @keyframes openLogin {
   from {
@@ -315,7 +485,6 @@ body {
     opacity: 1;
   }
 }
-
 
 @keyframes imagen {
   from {

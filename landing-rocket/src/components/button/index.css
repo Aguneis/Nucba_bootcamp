@@ -1,0 +1,16 @@
+.landing-button {
+  letter-spacing: 0.2rem;
+  font-family: "Josefin Sans";
+  padding: 0.8rem 1.5rem;
+  background-color: #00e6c9;
+  color: #ffffff;
+  font-size: 1.1rem;
+  width: 10.6rem;
+  margin: 0 auto;
+  text-align: center;
+  cursor: pointer;
+}
+
+.landing-button:hover {
+  background-color: #0aa893;
+}
